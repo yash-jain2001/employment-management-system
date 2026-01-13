@@ -17,3 +17,9 @@ html , body{
 #taskList::-webkit-scrollbar{
     display: none ;
 }
+#allTasks{
+    scroll-behavior: smooth;
+}
+#allTasks::-webkit-scrollbar{
+    display: none ;
+}
