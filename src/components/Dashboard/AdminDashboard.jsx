@@ -8,8 +8,8 @@ const AdminDashboard = () => {
     <div className="h-full w-full px-8">
       <Header />
       <div className="flex gap-5">
-      <CreateTask/>
-      <AllTasks/>
+        <CreateTask />
+        <AllTasks />
       </div>
     </div>
   );
