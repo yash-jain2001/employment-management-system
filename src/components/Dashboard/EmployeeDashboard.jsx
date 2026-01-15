@@ -3,13 +3,13 @@ import Header from "../comps/Header";
 import TaskListNumbers from "../comps/TaskListNumbers";
 import TaskList from "../TaskList/TaskList";
 
-const EmployeeDashboard = ({ data, handleLogout }) => {
+const EmployeeDashboard = (props) => {
   // console.log(data);
   return (
     <div className="bg-[#1c1c1c] h-screen px-8">
-      <Header data={data} handleLogout={handleLogout} />
-      <TaskListNumbers data={data} />
-      <TaskList data={data} />
+      <Header changeUser={props.changeUser} data={props.data} />
+      <TaskListNumbers data={props.data} />
+      <TaskList data={props.data} />
     </div>
   );
 };

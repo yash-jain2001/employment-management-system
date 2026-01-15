@@ -3,11 +3,11 @@ import Header from "../comps/Header";
 import CreateTask from "../comps/CreateTask";
 import AllTasks from "../comps/AllTasks";
 
-const AdminDashboard = () => {
+const AdminDashboard = (props) => {
   return (
     <div className="h-full w-full px-8">
-      <Header />
-      <div className="flex gap-5">
+      <Header changeUser={props.changeUser} />
+      <div className="flex flex-col">
         <CreateTask />
         <AllTasks />
       </div>
