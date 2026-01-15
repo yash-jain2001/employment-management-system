@@ -63,7 +63,7 @@ const CreateTask = () => {
             <input
               value={taskTitle}
               onChange={(e) => setTaskTitle(e.target.value)}
-              // required
+              required
               className="p-2 border-none rounded-md bg-black"
               type="text"
               placeholder="Enter Task Title"
@@ -87,7 +87,7 @@ const CreateTask = () => {
               <input
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
-                // required
+                required
                 className="p-2 border-none rounded-md bg-black"
                 type="date"
               />
@@ -97,7 +97,7 @@ const CreateTask = () => {
               <input
                 value={assignTo}
                 onChange={(e) => setAssignTo(e.target.value)}
-                // required
+                required
                 className="p-2 border-none rounded-md bg-black"
                 type="text"
                 placeholder="Enter Employee Name"
@@ -108,7 +108,7 @@ const CreateTask = () => {
               <input
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
-                // required
+                required
                 className="p-2 border-none rounded-md bg-black"
                 type="text"
                 placeholder="Enter Category"
